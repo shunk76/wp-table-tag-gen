@@ -1,10 +1,12 @@
+/* WP TableTagGen */
+
 @charset "UTF-8";
-#tableTagGen {
-	font-size: 16px;
-}
 
 #generator {
 	margin-bottom: 10px;
+}
+#generator #tagWrapper {
+	position: relative;
 }
 #generator header {
 	border: solid #dedede;
@@ -13,39 +15,53 @@
 	padding: 10px 0;
 	text-align: center;
 }
-#generator #output_text,
+#generator #outputChars,
 #generator #output_class {
 	display: none;
 }
-#generator #tagWrapper {
-	position: relative;
+#generator #insert,
+#generator #merge {
+	margin-left: 15px;
 }
-#generator #main p {
+#generator .message {
+	margin-bottom: 40px;
+}
+#generator .message p {
+	display: none;
+	text-align: center;
+	padding: 10px 0;
 	margin: 0;
-	padding: 5px 0 0;
+	background: #fff;
+	border: solid #dedede;
+	border-width: 0 0 1px;
+}
+#generator .message .default {
+	display: block;
+}
+#generator .message .alert {
+	background: #ffe5e5;
+	border-color: #f50000;
+	border-width: 1px 0;
+	color: #f50000;
+	font-weight: bold;
 }
 
-#generator p {
-	margin: 5px 0;
-	text-align: center;
-}
 @media screen and (-webkit-min-device-pixel-ratio:0){
 	/* hack for webkit */
 	#generator button {
 		padding: 2px 3px;
 	}
 }
-#generator button {
+#generator .button {
 	cursor: pointer;
 }
-
 #generator table , #generator td, #generator th {
 	border: 1px solid #595959;
 	border-collapse: collapse;
 	text-align: center;
 }
 #generator table {
-	margin: 10px auto;
+	margin: 0 auto;
 	cursor: crosshair;
 }
 #generator td,#generator  th {
@@ -68,29 +84,15 @@
 #generator th.ui-selecting {
 	background: #E6F2FF;
 }
-#generator input.value {
-	/*cursor: n-resize;*/
-	padding: 3px;
-}
-#generator #source {
-	float: left;
-}
-#generator #style {
-	float: left;
-}
 #generator textarea {
 	margin: 0 5px;
 	width: 296px;
 }
-#generator .wrapper {
-	width: 790px;
-	margin: 0 auto 20px;
-	padding-bottom: 100px;
+#generator input[type=number] {
+	width: 3em;
 }
-#generator .wrapper { /zoom : 1; }
-#generator .wrapper:after { content : ''; display : block; clear : both; height:0; }
-
-#generator label input {
-	vertical-align: middle;
+#generator i.dashicons.dashicons-undo,
+#generator i.dashicons.dashicons-redo {
+	font-size: 15px;
+	vertical-align: bottom;
 }
-
