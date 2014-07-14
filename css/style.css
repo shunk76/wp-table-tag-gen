@@ -15,6 +15,50 @@
 	padding: 10px 0;
 	text-align: center;
 }
+#generator header div.dashicons-editor-help {
+	position: relative;
+	vertical-align: middle;
+	color: #aaa;
+	cursor: pointer;
+}
+#generator .dashicons-editor-help:hover {
+	color: #595959;
+}
+#generator .content {
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: -105px;
+	width: 210px;
+	padding: 10px;
+	background: #595959;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 11px;
+	text-align: left;
+}
+#generator .content:after {
+	content: "";
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	margin-left: -5px;
+	width: 0px;
+	border: solid;
+	border-width: 10px 5px;
+	border-color: transparent transparent #595959;
+}
+#generator .help {
+	position: relative;
+	display: inline-block;
+}
+#generator .help:hover .content {
+	display: block;
+}
+
+#generator .help {
+	display: inline-block;
+}
 #generator #outputChars,
 #generator #output_class {
 	display: none;

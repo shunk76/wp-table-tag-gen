@@ -44,6 +44,12 @@ function insertTTG(){
         <header>
             <?php _e( 'row', 'wp-tabletag-gen' ); ?><input type="number" name="row" value="3" min="1"> &times;
             <?php _e( 'col', 'wp-tabletag-gen' ); ?><input type="number" name="col" value="3" min="1">
+            <div class="help">
+                <div class="dashicons dashicons-editor-help"></div>
+                <div class="content">
+                    <?php _e( 'To increase or decrease the numbers, you can either enter on the keyboard, click on the spinner, or turn the mouse wheel.', 'wp-tabletag-gen' ); ?>
+                </div>
+            </div>
 
             <button id="merge" class="button" title="<?php _e( 'Merge cells', 'wp-tabletag-gen' ); ?>"><?php _e( 'Merge', 'wp-tabletag-gen' ); ?></button>
             <button id="split" class="button" title="<?php _e( 'Split the merged cell', 'wp-tabletag-gen' ); ?>"><?php _e( 'Split', 'wp-tabletag-gen' ); ?></button>
@@ -72,10 +78,10 @@ function insertTTG(){
                 <i class="dashicons dashicons-no"></i><?php _e( 'Please enter a number.', 'wp-tabletag-gen' ); ?>
             </p>
             <p id="entNaturalNum" class="alert">
-                <i class="dashicons dashicons-no"></i><?php _e( 'Please enter a natural number(1,2,3...).', 'wp-tabletag-gen' ); ?>
+                <i class="dashicons dashicons-no"></i><?php _e( 'Please enter a natural number (1,2,3...).', 'wp-tabletag-gen' ); ?>
             </p>
             <p id="selectCells" class="alert">
-                <i class="dashicons dashicons-no"></i><?php _e( 'To merge the cells, please select the cells by dragging.', 'wp-tabletag-gen' ); ?>
+                <i class="dashicons dashicons-no"></i><?php _e( 'Please select the cells to be operated by dragging.', 'wp-tabletag-gen' ); ?>
             </p>
 
         </div>
