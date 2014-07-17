@@ -41,13 +41,13 @@ function insertTTG(){
 ?>
 <div id="tableTagGen" style="display: none;">
     <div id="generator">
-        <header>
+        <div class="ttg-header">
             <?php _e( 'row', 'wp-tabletag-gen' ); ?><input type="number" name="row" value="3" min="1"> &times;
             <?php _e( 'col', 'wp-tabletag-gen' ); ?><input type="number" name="col" value="3" min="1">
             <div class="help">
                 <div class="dashicons dashicons-editor-help"></div>
                 <div class="content">
-                    <?php _e( 'To increase or decrease the numbers, you can either enter on the keyboard, click on the spinner, or turn the mouse wheel.', 'wp-tabletag-gen' ); ?>
+                    <?php _e( 'To increase or decrease the value, you can either enter on the keyboard, click on the spinner, or turn the mouse wheel.', 'wp-tabletag-gen' ); ?>
                 </div>
             </div>
 
@@ -62,7 +62,7 @@ function insertTTG(){
             <button id="redo" class="button" title="<?php _e( 'Redo', 'wp-tabletag-gen' ); ?>" disabled="disabled"><i class="dashicons dashicons-redo"></i></button>
             <button id="initialize" class="button" title="<?php _e( 'initialize', 'wp-tabletag-gen' ); ?>"><?php _e( 'Initialize', 'wp-tabletag-gen' ); ?></button>
             <button id="insert" class="button button-primary"><?php _e( 'insert into post', 'wp-tabletag-gen' ); ?></button>
-        </header>
+        </div>
 
         <div class="message">
             <p id="selectByDragging" class="default"><?php _e( 'You can select the cells by dragging.', 'wp-tabletag-gen' ); ?></p>

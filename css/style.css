@@ -8,14 +8,14 @@
 #generator #tagWrapper {
 	position: relative;
 }
-#generator header {
+#generator .ttg-header {
 	border: solid #dedede;
 	border-width: 0 0 1px;
 	background: #f5f5f5;
 	padding: 10px 0;
 	text-align: center;
 }
-#generator header div.dashicons-editor-help {
+#generator .ttg-header div.dashicons-editor-help {
 	position: relative;
 	vertical-align: middle;
 	color: #aaa;
@@ -31,7 +31,7 @@
 	left: -105px;
 	width: 210px;
 	padding: 10px;
-	background: #595959;
+	background: #333;
 	border-radius: 10px;
 	color: #fff;
 	font-size: 11px;
@@ -46,7 +46,7 @@
 	width: 0px;
 	border: solid;
 	border-width: 10px 5px;
-	border-color: transparent transparent #595959;
+	border-color: transparent transparent #333;
 }
 #generator .help {
 	position: relative;
@@ -134,6 +134,9 @@
 }
 #generator input[type=number] {
 	width: 3em;
+}
+#generator textarea {
+	width: 150px;
 }
 #generator i.dashicons.dashicons-undo,
 #generator i.dashicons.dashicons-redo {
