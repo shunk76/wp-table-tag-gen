@@ -1,9 +1,17 @@
-WP-TableTagGen
-==============
+=== WP Table Tag Gen ===
+Contributors: shunk
+Plugin URI: https://github.com/shunk76/wp-table-tag-gen
+Tags: admin, post, page, editor
+Donate link: http://www.amazon.co.jp/gp/registry/wishlist/1BKZX6K42HMER/
+Requires at least: 3.3
+Tested up to: 4.0
+Stable tag: 1.0.4
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A WordPress plugin that generates table tag easily.
+This plugin generates table tags with simple operations.
 
-###  Description
+== Description ==
 
 This plugin generates table tags with simple operations.
 You can merge cells by dragging and clicking, and enter the characters directly in the table.
@@ -18,14 +26,42 @@ VERY EASY!
 6. All operations can be undone by clicking the "undo" button.
 7. When the table is complete, please click on the button "Insert into post".
 
-### Installation
+
+== Installation ==
 
 1. Upload `WP Table Tag Gen` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. You can generate table tags by HTML editor.
 
-### License
-GPLv2 or later
-http://www.gnu.org/licenses/gpl-2.0.html
+
+== Frequently Asked Questions ==
+
+Feel free to contact me at shunk76@yahoo.co.jp
 
 
+== Screenshots ==
+
+1. HTML editor
+2. WP Table Tag Gen
+
+== Changelog ==
+
+= 1.0.4 =
+* bug fix.
+
+= 1.0.3 =
+* edited readme.txt and wp-table-tag-gen.php in right English, may be.
+
+= 1.0.2 =
+* bug fix.
+
+= 1.0.1 =
+* bug fix.
+
+= 1.0.0 =
+* Initial release.
+
+== Upgrade Notice ==
+
+= 1.0.0 =
+* Initial release.
